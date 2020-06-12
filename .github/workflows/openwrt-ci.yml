@@ -48,6 +48,7 @@ jobs:
           sed -i 's/\"#src-git\"/\"src-git\"/g' ./feeds.conf.default
           ./scripts/feeds update -a
           ./scripts/feeds install -a
+          ./prepareCompile.sh
 
       - name: Generate configuration file
         run: make defconfig
