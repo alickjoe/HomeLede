@@ -40,7 +40,7 @@ done
 
 if [ ! -f .config ];then
 cp defconfig .config
-cd ./feeds/homeclash/luci-app-openclash/tools/po2lmo/
+cd ./feeds/OpenClash/luci-app-openclash/tools/po2lmo/
 sudo make install
 echo "Default .config created. Openclash installed."
 fi
