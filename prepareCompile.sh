@@ -1,23 +1,36 @@
 #/bin/sh
 
 disablePkgsList="
-./feeds/lienol/package/chinadns-ng 
-./feeds/lienol/package/ipt2socks 
-./feeds/lienol/package/v2ray 
-./feeds/lienol/package/v2ray-plugin 
+./feeds/pw/chinadns-ng 
+./feeds/pw/ipt2socks 
+./feeds/lienol/luci-app-softethervpn 
 ./package/lean/luci-app-kodexplorer 
+./package/lean/luci-lib-docker 
+./package/lean/luci-app-dockerman 
+./package/lean/kcptun 
+./package/lean/luci-theme-argon 
+./package/lean/v2ray 
+./package/lean/v2ray-plugin 
+./package/lean/xray 
+./package/lean/luci-app-jd-dailybonus 
+./package/lean/luci-app-docker 
+./package/lean/softethervpn5 
+./package/lean/luci-app-softethervpn 
+./feeds/packages/utils/docker-compose 
 ./feeds/packages/net/miniupnpd 
 ./feeds/packages/net/mwan3 
-./feeds/packages/utils/ttyd 
 ./feeds/packages/utils/docker-ce 
 ./feeds/packages/utils/containerd 
 ./feeds/packages/utils/libnetwork 
 ./feeds/packages/utils/tini 
-./package/network/services/dropbear 
+./feeds/packages/utils/runc 
+./feeds/packages/net/dnscrypt-proxy2 
 ./feeds/packages/net/https-dns-proxy 
-./package/lean/luci-app-dockerman 
-./package/lean/kcptun 
-./feeds/luci/applications/luci-app-upnp
+./feeds/packages/net/kcptun 
+./feeds/packages/net/smartdns 
+./feeds/packages/net/xtables-addons 
+./feeds/packages/net/softethervpn5 
+./feeds/luci/applications/luci-app-sqm
 "
 
 function disableDulicatedPkg()
